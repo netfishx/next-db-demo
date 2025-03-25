@@ -1,11 +1,13 @@
 import { Suspense } from "react";
 import { db } from "@/db/db";
+import { AddUser } from "./add-user";
 export default function Home() {
   return (
     <div className="flex h-screen flex-col p-4">
       <Suspense fallback={<div>Loading...</div>}>
         <Users />
       </Suspense>
+      <AddUser />
     </div>
   );
 }
