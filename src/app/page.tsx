@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { db } from "@/db/db";
+import { getUsers } from "@/db/api";
 import { AddUser } from "./add-user";
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
 }
 
 async function Users() {
-  const users = await db.query.users.findMany();
+  const users = await getUsers();
   return (
     <div>
       <h1 className="font-bold text-2xl">Users</h1>
