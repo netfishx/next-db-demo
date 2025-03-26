@@ -8,6 +8,13 @@
       "when": 1742880711080,
       "tag": "0000_graceful_the_captain",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1742883750641,
+      "tag": "0001_far_violations",
+      "breakpoints": true
     }
   ]
 }

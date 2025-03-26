@@ -10,7 +10,7 @@ export function AddUser() {
   async function handleAddUser() {
     startTransition(async () => {
       await addUser({
-        name: Math.random().toString(36).substring(2, 15),
+        name: Math.random().toString(36).substring(2, 8),
         age: Math.floor(Math.random() * 100),
         email: Math.random().toString(36).substring(2, 15),
       });
